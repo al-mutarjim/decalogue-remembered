@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noEmitOnError": false,
+    "noEmit": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "baseUrl": ".",
+    "module": "es6",
+    "experimentalDecorators": true,
+    "paths": {
+      "ember-boilerplate/tests/*": [
+        "tests/*"
+      ],
+      "ember-boilerplate/*": [
+        "app/*",
+        "lib/mirego-service-worker-plugin/app/*"
+      ],
+      "fetch": [
+        "node_modules/ember-fetch"
+      ],
+      "mirego-service-worker-plugin": [
+        "lib/mirego-service-worker-plugin/addon"
+      ],
+      "mirego-service-worker-plugin/*": [
+        "lib/mirego-service-worker-plugin/addon/*"
+      ],
+      "mirego-service-worker-plugin/test-support": [
+        "lib/mirego-service-worker-plugin/addon-test-support"
+      ],
+      "mirego-service-worker-plugin/test-support/*": [
+        "lib/mirego-service-worker-plugin/addon-test-support/*"
+      ],
+      "*": [
+        "types/*"
+      ]
+    }
+  },
+  "include": [
+    "app/**/*",
+    "fastboot/**/*",
+    "tests/**/*",
+    "types/**/*",
+    "lib/mirego-service-worker-plugin/**/*"
+  ]
+}
